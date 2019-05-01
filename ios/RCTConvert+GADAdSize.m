@@ -24,7 +24,8 @@
     } else if ([adSize isEqualToString:@"smartBannerLandscape"]) {
         return kGADAdSizeSmartBannerLandscape;
     }else if ([adSize isEqualToString:@"Ad150"]) {
-        return GADAdSizeFromCGSize(CGSizeMake(150, 150));;
+        return GADAdSizeFromCGSize(CGSizeMake(150, 150));
+    }
     else {
         return kGADAdSizeInvalid;
     }
