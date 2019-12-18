@@ -229,6 +229,7 @@ public class RNAdMobBannerViewManager extends ViewGroupManager<ReactAdView> {
     }
 
     private AdSize getAdSizeFromString(String adSize) {
+       AdSize Ad150 =new AdSize(150,150);
         switch (adSize) {
             case "banner":
                 return AdSize.BANNER;
@@ -246,6 +247,8 @@ public class RNAdMobBannerViewManager extends ViewGroupManager<ReactAdView> {
                 return AdSize.SMART_BANNER;
             case "smartBanner":
                 return AdSize.SMART_BANNER;
+            case "Ad150":
+                return Ad150;
             default:
                 return AdSize.BANNER;
         }
